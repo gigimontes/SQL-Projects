@@ -1,2 +1,1 @@
-# SQL-Projects
-This Repository consists of data analysis projects using SQL.
+# Project #1: Covid19CodeScript 
