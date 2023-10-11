@@ -1,7 +1,5 @@
 -- Selecting the data that I am going to be using for this project.
 
-@@ text in purple (and bold)@@ jhjhb
-
 SELECT location, date, total_cases, new_cases, total_deaths, population
 FROM `CovidProject.Covid19.CovidDeaths`
 ORDER BY 1,2
