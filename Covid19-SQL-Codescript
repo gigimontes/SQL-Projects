@@ -14,7 +14,7 @@ WHERE location = 'United States'
 ORDER BY 1, 2
 
 
---Total cases vs population, code results in the percentage of population that got Covid-19.
+--Total cases vs. population, code results in the percentage of population that got Covid-19.
 
 
 SELECT location, date, population, total_cases, (total_cases/population) * 100 AS PopulationInfected
@@ -23,7 +23,7 @@ WHERE location = 'United States'
 ORDER BY 1, 2
 
 
--- Countries with the highest Infection rate compared to Population, code results show the countries with the highest population with Covid/
+Countries with the highest infected population, code results show the countries with the highest population with Covid-19.
 
 
 SELECT location, population, MAX(total_cases) AS HighestInfectionCount, MAX((total_cases/population)) * 100 AS PercentPopulationInfected
@@ -32,7 +32,7 @@ GROUP BY location, population
 ORDER BY PercentPopulationInfected DESC
 
 
--- Countries with the Highest Death Count per Population
+-- Countries with the highest death count population, code results show the countries with the most fatalities.
 
 
 SELECT location, MAX(CAST(Total_deaths as int)) AS TotalDeathCount
@@ -42,8 +42,8 @@ GROUP BY location
 ORDER BY TotalDeathCount DESC
 
 
--- Total Death Count Per Continent Ordered by highest
--- Needed to filter out the High, upper middle, and low income rows since it was seen as a 'Continent.'
+-- Total Death Count Per Continent Ordered by highest, code results orders the countries with the most fatalitites from highest to lowest.
+-- Note: Needed to filter out the high, upper middle, and low income columns because it was seen as a 'continent.'
 
 
 SELECT location, MAX(CAST(Total_deaths as int)) AS TotalDeathCount
@@ -54,7 +54,7 @@ ORDER BY TotalDeathCount DESC
 
 
 
--- Shows us the percentage of fatialites on a global scale 
+-- Percentage of fatialites globally, code results show the global percent who got Covid-19.
 
 SELECT SUM(new_cases) AS total_cases, SUM(cast(new_deaths AS int)) as total_deaths,
       SUM(cast(new_deaths as int))/SUM(New_Cases)*100 AS DeathPercentage
@@ -63,7 +63,8 @@ WHERE continent is NOT NULL
 ORDER BY 1,2
 
 
--- Total Population VS Vaccinations (using JOIN Clause)
+-- Total population vs. vaccinations, code results show the percentage that population got the vaccine.
+-- Note: used the JOIN clause. 
 
 
 SELECT DEA.continent, DEA.location, DEA.date, DEA.population, VAC.new_vaccinations,
