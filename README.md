@@ -5,4 +5,4 @@ In this project, I analyzed data regarding COVID-19 using SQL. I look into the p
 
 ## Link to project
 
-Click this link to view project: [Covid19 SQL Codescript Project](https://github.com/gigimontes/SQL-Projects/blob/e582c86e7c55b9fa329820cf42cc54469919ec0d/Covid19-SQL-Codescript
+Click this link to view project: [Covid19 SQL Codescript Project](https://github.com/gigimontes/SQL-Projects/blob/e582c86e7c55b9fa329820cf42cc54469919ec0d/Covid19-SQL-Codescript)
