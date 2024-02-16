@@ -1,4 +1,4 @@
-# Project #1: Covid19 
+# Project #1: Covid19 🗺️ 
 
 ## Overview
 In this project, I analyzed data regarding COVID-19 using SQL. I look into the percentage of fatality in the United States, Percentage of the infected population, total death count per continent, and more. Before every query, there is a brief explanation about what the query is searching for and the expected results. 
